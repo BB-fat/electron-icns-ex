@@ -17,7 +17,7 @@ Napi::String ParseIcnsJs(const Napi::CallbackInfo &info) {
 }
 
 Napi::Object Init(Napi::Env env, Napi::Object exports) {
-    exports.Set("parseIcns", Napi::Function::New(env, ParseIcnsJs));
+    exports.Set("parseIcnsSync", Napi::Function::New(env, ParseIcnsJs));
     return exports;
 }
 
