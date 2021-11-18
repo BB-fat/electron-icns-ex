@@ -4,6 +4,8 @@
 
 #include <string>
 
-std::string ParseIcns(const std::string &path);
+std::string ParseIcnsToBase64(const std::string &path);
+
+void ParseIcnsToPNG(const std::string &icnsPath, const std::string &pngPath);
 
 #endif  //ELECTRON_ICNS_EX_ICNS_H_

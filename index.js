@@ -1,15 +1,24 @@
-// const { promisify } = require('util');
 const {
-  parseIcnsSync,
+  parseIcnsToBase64Sync,
+  parseIcnsToPNGSync
 } = require('node-gyp-build')(__dirname);
 
-const parseIcns = (path) => {
+const parseIcnsToBase64 = (path) => {
   return new Promise((resolve) => {
-    resolve(parseIcnsSync(path));
+    resolve(parseIcnsToBase64Sync(path));
+  });
+};
+
+const parseIcnsToPNG = (icnsPath, pngPath) => {
+  return new Promise((resolve) => {
+    parseIcnsToPNGSync(icnsPath, pngPath);
+    resolve();
   });
 };
 
 module.exports = {
-  parseIcns,
-  parseIcnsSync,
+  parseIcnsToBase64,
+  parseIcnsToBase64Sync,
+  parseIcnsToPNG,
+  parseIcnsToPNGSync,
 };
