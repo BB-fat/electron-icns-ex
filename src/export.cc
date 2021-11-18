@@ -1,3 +1,4 @@
+// Copyright 2021 alexju
 #include <napi.h>
 #include "icns.h"
 

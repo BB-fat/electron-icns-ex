@@ -7,7 +7,7 @@ const parseIcns = (path) => {
   return new Promise((resolve) => {
     resolve(parseIcnsSync(path));
   });
-}
+};
 
 module.exports = {
   parseIcns,
