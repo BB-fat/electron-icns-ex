@@ -6,6 +6,10 @@ A node.js native addon designed to use with [electron](https://www.electronjs.or
 
 ```javascript
 const icns = require('electron-icns-ex');
-const base64 = icns.parseIcnsToBase64(icnsPath);
-```
 
+// Get DateUrl
+const base64 = icns.parseIcnsToBase64(icnsPath);
+
+// Save png file
+parseIcnsToPNG(icnsPath, pngPath);
+```

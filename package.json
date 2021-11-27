@@ -10,6 +10,11 @@
   ],
   "author": "BBfat",
   "license": "MIT",
+  "homepage": "https://github.com/BB-fat/electron-icns-ex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BB-fat/electron-icns-ex"
+  },
   "dependencies": {
     "node-addon-api": "^4.0.0",
     "node-gyp-build": "^4.2.3"
